@@ -2,6 +2,7 @@
 
 > A Vue.js project
 
+<img src="https://github.com/banana618859/vue_todo/blob/master/src/assets/todo.jpg" width="600" />
 ## Build Setup
 
 ``` bash
