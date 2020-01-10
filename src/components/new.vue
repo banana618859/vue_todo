@@ -3,7 +3,7 @@
  * @Author: yizheng.yuan
  * @Date: 2020-01-09 17:18:06
  * @LastEditors  : yizheng.yuan
- * @LastEditTime : 2020-01-10 08:46:05
+ * @LastEditTime : 2020-01-10 08:48:07
  -->
 <template>
     <div>
@@ -34,7 +34,7 @@
             <p>测试内容：{{currentOne.content}}</p>
         </div>
 
-        <el-dialog title="提示" :visible.sync="showAddTest" width="30%">
+        <el-dialog title="添加测试" :visible.sync="showAddTest" width="30%">
             <el-input v-model="testName"></el-input>
             <span slot="footer" class="dialog-footer">
                 <el-button @click="showAddTest = false">取 消</el-button>
