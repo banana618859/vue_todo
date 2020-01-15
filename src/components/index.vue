@@ -3,7 +3,7 @@
  * @Author: yizheng.yuan
  * @Date: 2020-01-09 17:08:46
  * @LastEditors  : yizheng.yuan
- * @LastEditTime : 2020-01-09 17:52:32
+ * @LastEditTime : 2020-01-12 18:53:04
  -->
 <template>
     <div>
@@ -20,6 +20,28 @@
 <script>
     import Sidebar from './Sidebar'
     export default {
+        created() {
+            let menu = [
+                {
+                    href: '/',
+                    title: 'hello',
+                    icon: 'el-icon-s-home'
+                },
+                {
+                    href: '/NewPage',
+                    title: 'Charts',
+                    icon: 'el-icon-s-unfold'
+                },
+                {
+                    href: '/test',
+                    title: '配置目录',
+                    icon: 'el-icon-s-fold'
+                }
+            ]
+
+            // 将菜单数据提交到vuex里面
+            this.$store.commit('saveMenu', menu)
+        },
         components: {
             Sidebar
         }
@@ -38,8 +60,7 @@
     }
 
     .main {
-        height: 100vh;
         padding-left: 200px;
-        border: 1px solid rebeccapurple;
+        overflow: auto;
     }
 </style>
