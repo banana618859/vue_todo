@@ -3,7 +3,7 @@
  * @Author: yizheng.yuan
  * @Date: 2020-01-11 15:08:09
  * @LastEditors  : yizheng.yuan
- * @LastEditTime : 2020-01-15 13:46:19
+ * @LastEditTime : 2020-01-15 13:51:00
  -->
 <template>
     <div style="padding:10px">
@@ -88,7 +88,8 @@
         watch: {
             $route(to, from) {
                 console.log('testSon路由变化了：', to.path);
-                this.changeConf()
+                this.changeConf();
+                console.log('-----此处可以请求后台数据，更新页面-----')
             },
             'baseConfig.colOptions'(valArr) {
                 var arr = this.baseConfig.colSelect.filter(i => valArr.indexOf(i) < 0); // 未选中
