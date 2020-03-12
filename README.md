@@ -2,7 +2,15 @@
 
 > A Vue.js project
 
+> 1.todo list
+
+> 2.can custom page content by user
+
+#### look1
 ![todo](https://github.com/banana618859/vue_todo/blob/master/src/assets/todo.png)
+
+#### look2
+![todo](https://github.com/banana618859/vue_todo/blob/master/src/assets/look2.jpg)
 ## Build Setup
 
 ``` bash
